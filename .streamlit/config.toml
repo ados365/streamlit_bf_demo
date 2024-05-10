@@ -1,0 +1,11 @@
+[server]
+port = 80
+# primaryColor = "#00C1D3"
+# secondaryBackgroundColor="#586e75"
+[theme]
+primaryColor = "#00C1D3" #"C5DF21"
+secondaryColor = "#000000"
+textColor = "#ffffff"
+secondaryTextColor = "#ffffff"
+secondaryBackgroundColor="#223233"#494C30"
+backgroundColor = "#000000"
