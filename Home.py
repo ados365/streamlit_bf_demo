@@ -11,8 +11,8 @@ assert os.path.isfile(path)
 with open( path ) as css:
     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 
-page_bg_img = load_background_image()
-st.markdown(page_bg_img, unsafe_allow_html=True)
+#page_bg_img = load_background_image()
+#st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # add bf logo
 # add_logo("./images/bf_logo_small.png")
