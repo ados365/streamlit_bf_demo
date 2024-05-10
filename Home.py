@@ -1,19 +1,21 @@
 import streamlit as st
 from streamlit_extras.app_logo import add_logo
 from src.app_style.style_details import load_background_image
+import os
 # ===========================================================================================
 # Design settings
 # ===========================================================================================
 
-
-with open( "app\style.css" ) as css:
+path = r"app\style.css"
+assert os.path.isfile(path)
+with open( path ) as css:
     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 
 page_bg_img = load_background_image()
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # add bf logo
-add_logo("./images/bf_logo_small.png")
+# add_logo("./images/bf_logo_small.png")
 # ===========================================================================================
 # End of design settings
 # ===========================================================================================
